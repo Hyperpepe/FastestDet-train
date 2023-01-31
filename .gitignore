@@ -1,0 +1,7 @@
+__pycache__
+datasets/data-kt
+datasets/dataSet_path
+checkpoint/
+datasets/
+weights/
+/weights/

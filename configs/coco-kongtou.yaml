@@ -1,0 +1,18 @@
+DATASET:
+  TRAIN: "/mnt/c/linux/FastestDet-main/datasets/data-kt/train.txt"
+  VAL: "/mnt/c/linux/FastestDet-main/datasets/data-kt/val.txt"
+  NAMES: "configs/class.names"
+MODEL:
+  NC: 2
+  INPUT_WIDTH: 512
+  INPUT_HEIGHT: 512
+TRAIN:
+  LR: 0.001
+  THRESH: 0.3
+  WARMUP: true
+  BATCH_SIZE: 32
+  END_EPOCH: 500
+  MILESTIONES:
+    - 150
+    - 250
+    - 300
