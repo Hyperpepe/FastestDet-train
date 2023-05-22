@@ -1,7 +1,7 @@
 import os
 import shutil
 
-basepath = '/mnt/c/linux/FastestDet-main/datasets/'
+basepath = '/mnt/c/linux/FastestDet-main/datasets-daozha/'
 # 读取 train.txt 文件中的文件名
 # with open(basepath + 'ImageSets/val.txt', 'r') as f:
 #     val_filenames = f.readlines()

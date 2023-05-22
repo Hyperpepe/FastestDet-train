@@ -23,47 +23,6 @@
 *******************************************************************************/
 '''
 
-# import os
-# import random
-# trainval_percent = 0.2
-# train_percent = 0.8
-#
-# basepath = 'C:/linux/FastestDet-main/datasets/Images/'
-#
-# txtsavepath = basepath + 'ImageSets'
-# xmlfilepath = basepath + 'Annotations'  #xml文件存放地址，绝对路径
-#
-# if not os.path.exists('ImageSets/'):
-#     os.makedirs('ImageSets/')
-#
-# total_xml = os.listdir(xmlfilepath)
-# num = len(total_xml)
-# list = range(num)
-# tv = int(num * trainval_percent)
-# tr = int(tv * train_percent)
-# trainval = random.sample(list, tv)
-# train = random.sample(trainval, tr)
-# ftrainval = open(basepath + 'ImageSets/trainval.txt', 'w')
-# ftest = open(basepath + 'ImageSets/test.txt', 'w')
-# ftrain = open(basepath + 'ImageSets/train.txt', 'w')
-# fval = open(basepath + 'ImageSets/val.txt', 'w')
-#
-#
-# for i in list:
-#     name = total_xml[i][:-4] + '\n'
-#     if i in trainval:
-#         ftrainval.write(name)
-#         if i in train:
-#             ftest.write(name)
-#         else:
-#             fval.write(name)
-#     else:
-#         ftrain.write(name)
-#
-# ftrainval.close()
-# ftrain.close()
-# fval.close()
-# ftest.close()
 
 import os
 import random
@@ -71,37 +30,28 @@ import random
 trainval_percent = 0.1
 train_percent = 0.9
 
-basepath = '/mnt/c/linux/FastestDet-main/datasets/'
+basepath = '/mnt/c/linux/FastestDet-main/datasets-daozha/'
 
-txtsavepath = basepath + 'ImageSets'
-imgfilepath = basepath + 'Images'  # image file directory, absolute path
+imgfilepath = basepath + 'images'  # image file directory
 
-if not os.path.exists('ImageSets/'):
-    os.makedirs('ImageSets/')
+if not os.path.exists(basepath + 'ImageSets/'):
+    os.makedirs(basepath + 'ImageSets/')
 
 total_imgs = os.listdir(imgfilepath)
 num = len(total_imgs)
 list = range(num)
 tv = int(num * trainval_percent)
-tr = int(tv * train_percent)
 trainval = random.sample(list, tv)
-train = random.sample(trainval, tr)
-ftrainval = open('ImageSets/trainval.txt', 'w')
-ftest = open('ImageSets/test.txt', 'w')
-ftrain = open('ImageSets/train.txt', 'w')
-fval = open('ImageSets/val.txt', 'w')
+
+ftrain = open(basepath + 'ImageSets/train.txt', 'w')
+fval = open(basepath + 'ImageSets/val.txt', 'w')
 
 for i in list:
     name = total_imgs[i][:-4] + '\n'
     if i in trainval:
-        ftrainval.write(name)
-        if i in train:
-            ftest.write(name)
-        else:
-            fval.write(name)
+        fval.write(name)
     else:
         ftrain.write(name)
-ftrainval.close()
+
 ftrain.close()
 fval.close()
-ftest.close()

@@ -7,7 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/datasets/data-kt" />
       <excludeFolder url="file://$MODULE_DIR$/datasets/dataSet_path" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.8.15 WSL (Ubuntu-20.04): (/home/lxh/anaconda3/envs/fastdet/bin/python3.8)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -6,7 +6,7 @@ transpose_node = helper.make_node('Transpose', inputs=['concat_output'], outputs
 reshape_node = helper.make_node('Reshape', inputs=['transposed_output'], outputs=['reshaped_output'], shape=[-1, 1, 28, 28])
 
 # Add nodes to the model
-model = onnx.load('Fastkt.onnx')
+model = onnx.load('checkpoint/weight_AP05-1.000000_10-epoch.pth')
 model.graph.sequential.append([transpose_node, reshape_node])
 
 # Save the model

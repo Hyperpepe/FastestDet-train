@@ -1,7 +1,9 @@
-import cv2
 import time
+
+import cv2
 import numpy as np
-import onnxruntime 
+import onnxruntime
+
 
 # sigmoid函数
 def sigmoid(x):
@@ -134,8 +136,9 @@ if __name__ == '__main__':
             
     print("=================box info===================")
     for b in bboxes:
-        print(b)
+
         obj_score, cls_index = b[4], int(b[5])
+        print(cls_index)
         x1, y1, x2, y2 = int(b[0]), int(b[1]), int(b[2]), int(b[3])
 
         #绘制检测框

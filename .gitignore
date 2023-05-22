@@ -5,3 +5,5 @@ checkpoint/
 datasets/
 weights/
 /weights/
+/datasets-daozha/
+/datasets-daozha/ImageSets/

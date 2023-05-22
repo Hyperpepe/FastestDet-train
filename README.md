@@ -1,3 +1,5 @@
+forked from ：https://github.com/dog-qiuqiu/FastestDet
+
 ***2022.7.14:Optimize loss, adopt IOU aware based on smooth L1, and the AP is significantly increased by 0.7***
 
 # :zap:FastestDet:zap:
@@ -140,7 +142,7 @@ Intel|i7-8700(X86-cpu)|Linux(amd64)|ncnn|4.51ms|4.33ms
   │   ├── 000070.jpg
   │   └── 000070.txt
   └── val.txt                # val dataset path .txt file
-
+  
   ```
 
 ### Build the training .yaml configuration file
@@ -203,7 +205,7 @@ Intel|i7-8700(X86-cpu)|Linux(amd64)|ncnn|4.51ms|4.33ms
   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.043
   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.236
   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.372
-
+  
   ```
 
 # Deploy

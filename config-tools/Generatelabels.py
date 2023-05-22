@@ -24,7 +24,6 @@
 '''
 
 import os
-import xml.etree.ElementTree as ET
 
 # import os
 # from os import getcwd
@@ -91,7 +90,7 @@ import xml.etree.ElementTree as ET
 #         b = (b1, b2, b3, b4)
 #         bb = convert((w, h), b)
 #         out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
-basepath = '/mnt/c/linux/FastestDet-main/datasets/data-kt/'
+basepath = '/mnt/c/linux/FastestDet-main/datasets/data-daozha/'
 # 读取文件夹中的文件名
 # train_filenames = os.listdir(basepath + "train")
 # val_filenames = os.listdir(basepath + "val")
